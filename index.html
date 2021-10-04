@@ -16,6 +16,7 @@
 
   <!-- Style (Vendor) -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/elevate-framework.css">
 
   <!-- Style -->
@@ -96,7 +97,7 @@
   </header>
 
   <!-- Banner -->
-  <div class="banner">
+  <div class="banner" data-aos="fade">
     <div class="container">
       <!-- Img -->
       <div class="img">
@@ -128,7 +129,7 @@
   </div>
 
   <!-- Info Section 1 -->
-  <div class="info-section-1 right">
+  <div class="info-section-1 right" id="infoSection1">
     <div class="container">
       <!-- Img -->
       <div class="img">
@@ -139,14 +140,14 @@
       </div>
       <!-- Text -->
       <div class="text">
-        <h1 class="section-title f-d-60 f-m-85 f-ah">
+        <h1 class="section-title f-d-60 f-m-85 f-ah" data-aos="fade-left" data-aos-delay="0" data-aos-anchor="#infoSection1">
           <span class="text-red">
             נוף
           </span> 
           הגליל
         </h1>
         <!-- Tabs -->
-        <div class="tabs">
+        <div class="tabs" data-aos="fade" data-aos-delay="400" data-aos-anchor="#infoSection1">
           <!-- Tab Content -->
           <div class="tab-content">
             <ul>
@@ -209,7 +210,7 @@
   </div>
 
   <!-- Info Section -->
-  <div class="info-section-1 left">
+  <div class="info-section-1 left" id="infoSection2">
     <div class="container">
       <!-- Img -->
       <div class="img">
@@ -220,14 +221,14 @@
       </div>
       <!-- Text -->
       <div class="text">
-        <h2 class="section-title f-d-60 f-m-85 f-ah">
+        <h2 class="section-title f-d-60 f-m-85 f-ah" data-aos="fade-right" data-aos-delay="0" data-aos-anchor="#infoSection2">
           <span class="text-red">
             שכונת
           </span> 
           הר יונה ד׳
         </h2>
         <!-- Tabs -->
-        <div class="tabs">
+        <div class="tabs" data-aos="fade" data-aos-delay="400" data-aos-anchor="#infoSection2">
           <!-- Tab Content -->
           <div class="tab-content">
             <ul>
@@ -298,7 +299,7 @@
   </div>
 
   <!-- Map -->
-  <div class="map">
+  <div class="map" id="map">
     <div class="container">
       <!-- Icon -->
       <div class="icon">
@@ -362,7 +363,7 @@
         </ul>
       </div>
       <!-- Img -->
-      <div class="img">
+      <div class="img" data-aos="flip-left" data-aos-anchor="#map">
         <picture>
           <source media="(min-width:1024px)" srcset="img/home/map.jpg">
           <img src="img/home/map-mobile.jpg" alt="unik-hills-img">
@@ -386,7 +387,7 @@
         <p class="f-d-18 f-m-30">, מציע סגנון וחוויית מגורים יוקרתית Hills Unik פרויקט הבוטיק מוקפדת ועשירה גולת הכותרת של הפרויקט היא דירות גדולות במיוחד. בתכנון הפרויקט הושם דגש על עיצוב חללים מרווחים, בנייה נמוכה ומרפסות שמש ענקיות הצופות לנוף עוצר נשימה, כדי לאפשר למשפחה לגור בנוחות מקסימלית הפרויקט כולל נייני בוטיק מפוארים בני קומות עם יח״ד.מציע תמהיל מגוון של דירות המתאפיינות בסטנדרט גבוה מפרט יוקרתי.בנוסף מיקומו של הפרויקט במעלה השטח הציבורי שליד היכל האומנויות והספר ע"ש גרין, מעניק לחוויית המגורים סגנון כפרי ופסטורלי עם אווירה שקטה ונעימה</p>
       </div>
       <!-- Img -->
-      <div class="img">
+      <div class="img" data-aos="fade">
         <picture>
           <source media="(min-width:1024px)" srcset="img/home/info-img-3.jpg">
           <img src="img/home/info-img-3-mobile.jpg" alt="unik-hills-img">
@@ -485,7 +486,7 @@
         </p>
       </div>
       <!-- Img -->
-      <div class="img">
+      <div class="img" data-aos="fade">
         <picture>
           <source media="(min-width:1024px)" srcset="img/home/company-img-1.jpg">
           <img src="img/home/company-img-1-mobile.jpg" alt="unik-hills-img">
@@ -517,7 +518,7 @@
         </p>
       </div>
       <!-- Img -->
-      <div class="img">
+      <div class="img" data-aos="fade">
         <picture>
           <source media="(min-width:1024px)" srcset="img/home/company-img-2.jpg">
           <img src="img/home/company-img-2-mobile.jpg" alt="unik-hills-img">
@@ -527,7 +528,7 @@
   </div>
 
   <!-- Info Section 1 -->
-  <div class="info-section-1 right">
+  <div class="info-section-1 right" id="infoSection3">
     <div class="container">
       <!-- Img -->
       <div class="img d-desktop">
@@ -535,86 +536,88 @@
       </div>
       <!-- Text -->
       <div class="text">
-        <h1 class="section-title f-d-60 f-m-85 f-ah">
+        <h1 class="section-title f-d-60 f-m-85 f-ah" data-aos="fade-left" data-aos-delay="0" data-aos-anchor="#infoSection3">
           <span class="text-red">
             נוף
           </span> 
           הגליל
         </h1>
-        <h3 class="f-d-30 f-m-43 regular">לחיות בעיר מיוחדת</h3>
-        <p class="f-d-18 f-m-30">אתם מוזמנים לנוף הגליל, השוכנת בחלקו
-          המזרחי והגבוה של רכס הרי, נצרת וטובלת בנוף
-          גלילי יפיפה. העיר מציעה שפע של פארקים
-         </p>
-         <!-- Accordion -->
-        <div class="accordion">
-          <!-- Collapsible -->
-          <div class="collapsible show">
-            <!-- Toggler -->
-            <div class="collapse-toggler">
-              <p class="f-d-20 f-m-30 bold">דירות 3 חדרים</p>
-              <img src="img/icons/plus-red.svg" alt="unik-hills-icon">
-            </div>
-            <!-- Collapse -->
-            <div class="collapse" style="height: auto">
-              <div>
-                <ul class="links">
-                  <!-- Item -->
-                  <li>
-                    <a href="#" class="img-toggler f-d-15 f-m-30 active">‏3 חדרים + מרפסת שמש | מס' דגם 111111</a>
-                    <a href="#" class="pdf-link"><img src="img/icons/pdf.jpg" alt="unik-hills-icon"></a>
-                  </li>
-                  <!-- Item -->
-                  <li>
-                    <a href="#" class="img-toggler f-d-15 f-m-30">‏3 חדרים + מרפסת שמש | מס' דגם 111111</a>
-                    <a href="#" class="pdf-link"><img src="img/icons/pdf.jpg" alt="unik-hills-icon"></a>
-                  </li>
-                  <!-- Item -->
-                  <li>
-                    <a href="#" class="img-toggler f-d-15 f-m-30">‏3 חדרים + מרפסת שמש | מס' דגם 111111</a>
-                    <a href="#" class="pdf-link"><img src="img/icons/pdf.jpg" alt="unik-hills-icon"></a>
-                  </li>
-                </ul>
+        <div data-aos="fade" data-aos-delay="400" data-aos-anchor="#infoSection3">
+          <h3 class="f-d-30 f-m-43 regular">לחיות בעיר מיוחדת</h3>
+          <p class="f-d-18 f-m-30">אתם מוזמנים לנוף הגליל, השוכנת בחלקו
+            המזרחי והגבוה של רכס הרי, נצרת וטובלת בנוף
+            גלילי יפיפה. העיר מציעה שפע של פארקים
+           </p>
+           <!-- Accordion -->
+          <div class="accordion">
+            <!-- Collapsible -->
+            <div class="collapsible show">
+              <!-- Toggler -->
+              <div class="collapse-toggler">
+                <p class="f-d-20 f-m-30 bold">דירות 3 חדרים</p>
+                <img src="img/icons/plus-red.svg" alt="unik-hills-icon">
+              </div>
+              <!-- Collapse -->
+              <div class="collapse" style="height: auto">
+                <div>
+                  <ul class="links">
+                    <!-- Item -->
+                    <li>
+                      <a href="#" class="img-toggler f-d-15 f-m-30 active">‏3 חדרים + מרפסת שמש | מס' דגם 111111</a>
+                      <a href="#" class="pdf-link"><img src="img/icons/pdf.jpg" alt="unik-hills-icon"></a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#" class="img-toggler f-d-15 f-m-30">‏3 חדרים + מרפסת שמש | מס' דגם 111111</a>
+                      <a href="#" class="pdf-link"><img src="img/icons/pdf.jpg" alt="unik-hills-icon"></a>
+                    </li>
+                    <!-- Item -->
+                    <li>
+                      <a href="#" class="img-toggler f-d-15 f-m-30">‏3 חדרים + מרפסת שמש | מס' דגם 111111</a>
+                      <a href="#" class="pdf-link"><img src="img/icons/pdf.jpg" alt="unik-hills-icon"></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Collapsible -->
-          <div class="collapsible">
-            <!-- Toggler -->
-            <div class="collapse-toggler">
-              <p class="f-d-20 f-m-30 bold">דירות 4 חדרים</p>
-              <img src="img/icons/plus-red.svg" alt="unik-hills-icon">
-            </div>
-            <!-- Collapse -->
-            <div class="collapse">
-              <div>
-                <ul class="links">
-                  <!-- Item -->
-                  <li>
-                    <a href="#" class="img-toggler f-d-15 f-m-30">‏4 חדרים + מרפסת שמש | מס' דגם 111111</a>
-                    <a href="#" class="pdf-link"><img src="img/icons/pdf.jpg" alt="unik-hills-icon"></a>
-                  </li>
-                </ul>
+            <!-- Collapsible -->
+            <div class="collapsible">
+              <!-- Toggler -->
+              <div class="collapse-toggler">
+                <p class="f-d-20 f-m-30 bold">דירות 4 חדרים</p>
+                <img src="img/icons/plus-red.svg" alt="unik-hills-icon">
+              </div>
+              <!-- Collapse -->
+              <div class="collapse">
+                <div>
+                  <ul class="links">
+                    <!-- Item -->
+                    <li>
+                      <a href="#" class="img-toggler f-d-15 f-m-30">‏4 חדרים + מרפסת שמש | מס' דגם 111111</a>
+                      <a href="#" class="pdf-link"><img src="img/icons/pdf.jpg" alt="unik-hills-icon"></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Collapsible -->
-          <div class="collapsible">
-            <!-- Toggler -->
-            <div class="collapse-toggler">
-              <p class="f-d-20 f-m-30 bold">דירות 5 חדרים</p>
-              <img src="img/icons/plus-red.svg" alt="unik-hills-icon">
-            </div>
-            <!-- Collapse -->
-            <div class="collapse">
-              <div>
-                <ul class="links">
-                  <!-- Item -->
-                  <li>
-                    <a href="#" class="img-toggler f-d-15 f-m-30">‏5 חדרים + מרפסת שמש | מס' דגם 111111</a>
-                    <a href="#" class="pdf-link"><img src="img/icons/pdf.jpg" alt="unik-hills-icon"></a>
-                  </li>
-                </ul>
+            <!-- Collapsible -->
+            <div class="collapsible">
+              <!-- Toggler -->
+              <div class="collapse-toggler">
+                <p class="f-d-20 f-m-30 bold">דירות 5 חדרים</p>
+                <img src="img/icons/plus-red.svg" alt="unik-hills-icon">
+              </div>
+              <!-- Collapse -->
+              <div class="collapse">
+                <div>
+                  <ul class="links">
+                    <!-- Item -->
+                    <li>
+                      <a href="#" class="img-toggler f-d-15 f-m-30">‏5 חדרים + מרפסת שמש | מס' דגם 111111</a>
+                      <a href="#" class="pdf-link"><img src="img/icons/pdf.jpg" alt="unik-hills-icon"></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -649,32 +652,34 @@
   </div>
 
   <!-- Info Section -->
-  <div class="info-section-1 left">
+  <div class="info-section-1 left" id="infoSection4">
     <div class="container">
       <!-- Text -->
       <div class="text">
-        <h2 class="section-title f-d-60 f-m-85 f-ah">
+        <h2 class="section-title f-d-60 f-m-85 f-ah" data-aos="fade-right" data-aos-delay="0" data-aos-anchor="#infoSection4">
           <span class="text-red">
             מפרט
           </span> 
           טכני
         </h2>
-        <h3 class="f-d-30 f-m-43 regular">לגור בשכונה המובילה בנוף הגליל</h3>
-        <p class="f-d-18 f-m-30">
-          בימים אלו, קמה וצומחת שכונת הר יונה ד' היוקרתית הממוקמת על רכס הצופה לנוף המרהיב של שדות העמק ונחשבת לשכונה האיכותיתהמבוקשת ביותר בנוף הגליל
-          <br><br>
-          השכונה החדשה נמצאת בצמוד ליער צ'רצ'יל, המשתרע במורד ההר בין, נוף הגליל לעמק יזרעאל. היער המרהיב, השומר על מצבו הטבעי
-           מתפרס על שטח של כ-25,000 דונם ומורכב מאלונים עתיקים, עצי
-          . אורן, ברוש, עצי שיזף ועוד. לרשות המבקרים ביער עומד חניון ומצפורשכונת הר יונה ד׳ מהווה מקור משיכה לאוכלוסיה איכותית ומציעה רמת חיים גבוהה ופיתוח סביבתי נרחב
-          <br><br>
-          , תושבי השכונה יהנו מתכנון קהילתי מוקפד, סביבה ירוקה ומתקדמת
-           שבילי אופניים רבים ונגישות תחבורתית נוחה לרכבת הקלה העתידית
-          .ולצירי תנועה מרכזיים
-        </p>
-        <a href="#" class="link f-d-15 f-m-30 medium text-red">
-          למפרט טכני מלא
-          <img src="img/icons/arrow-left-red.svg" alt="unik-hills-icon">
-        </a>
+        <div data-aos="fade" data-aos-delay="400" data-aos-anchor="#infoSection4">
+          <h3 class="f-d-30 f-m-43 regular">לגור בשכונה המובילה בנוף הגליל</h3>
+          <p class="f-d-18 f-m-30">
+            בימים אלו, קמה וצומחת שכונת הר יונה ד' היוקרתית הממוקמת על רכס הצופה לנוף המרהיב של שדות העמק ונחשבת לשכונה האיכותיתהמבוקשת ביותר בנוף הגליל
+            <br><br>
+            השכונה החדשה נמצאת בצמוד ליער צ'רצ'יל, המשתרע במורד ההר בין, נוף הגליל לעמק יזרעאל. היער המרהיב, השומר על מצבו הטבעי
+             מתפרס על שטח של כ-25,000 דונם ומורכב מאלונים עתיקים, עצי
+            . אורן, ברוש, עצי שיזף ועוד. לרשות המבקרים ביער עומד חניון ומצפורשכונת הר יונה ד׳ מהווה מקור משיכה לאוכלוסיה איכותית ומציעה רמת חיים גבוהה ופיתוח סביבתי נרחב
+            <br><br>
+            , תושבי השכונה יהנו מתכנון קהילתי מוקפד, סביבה ירוקה ומתקדמת
+             שבילי אופניים רבים ונגישות תחבורתית נוחה לרכבת הקלה העתידית
+            .ולצירי תנועה מרכזיים
+          </p>
+          <a href="#" class="link f-d-15 f-m-30 medium text-red">
+            למפרט טכני מלא
+            <img src="img/icons/arrow-left-red.svg" alt="unik-hills-icon">
+          </a>
+        </div>
       </div>
       <!-- Img -->
       <div class="img">
@@ -822,6 +827,7 @@
   <!-- Script (Vendor) -->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/gsap.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/elevate-framework.js"></script>
 
   <!-- Script -->

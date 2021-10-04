@@ -1,16 +1,16 @@
 /* #Hamburger Menu
   ======================================================= */
-  const hamburgerBtn = document.querySelector('.header .hamburger');
-  const body = document.querySelector('body');
-  const header = document.querySelector('.header');
-  
-  if (hamburgerBtn) {
-    hamburgerBtn.addEventListener('click', (e) => {
-      hamburgerBtn.classList.toggle('is-active');
-      header.classList.toggle('show-menu');
-      body.classList.toggle('no-scroll');
-    });
-  }
+const hamburgerBtn = document.querySelector('.header .hamburger');
+const body = document.querySelector('body');
+const header = document.querySelector('.header');
+
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener('click', (e) => {
+    hamburgerBtn.classList.toggle('is-active');
+    header.classList.toggle('show-menu');
+    body.classList.toggle('no-scroll');
+  });
+}
 
 /* #Banner
 ================================================== */
@@ -50,7 +50,7 @@ if (document.querySelector('.info-section-1 .img-toggler')) {
   imgTogglerLinks.forEach((toggler, index) => {
     toggler.addEventListener('click', (e) => {
       e.preventDefault();
-      
+
       for (let i = 0; i < imgTogglerLinks.length; i++) {
         imgTogglerLinks[i].classList.remove('active');
         imgs[i].classList.remove('active');
@@ -79,3 +79,12 @@ if (contactBar) {
     body.classList.remove('no-scroll');
   });
 }
+
+/* #AOS Animations
+    ======================================================= */
+AOS.init({
+  startEvent: 'load',
+  once: true,
+  duration: 800,
+  offset: 300,
+});

@@ -351,6 +351,7 @@ body {
 ================================================== */
 .banner {
   position: relative;
+  direction: rtl;
 }
 
 .banner .img img,
