@@ -121,6 +121,7 @@ button {
 /* Fonts made from 1920px desktop design */
 
 .f-d-14 {font-size: 0.73vw !important; /* 14px */ }
+.f-d-15 {font-size: 0.78vw !important; /* 15px */ }
 .f-d-16 {font-size: 0.83vw !important; /* 16px */ }
 .f-d-17 {font-size: 0.88vw !important; /* 17px */ }
 .f-d-18 {font-size: 0.94vw !important; /* 18px */ }
@@ -181,6 +182,7 @@ button {
   .f-m-38 {font-size: 5vw !important; /* 38px */ }
   .f-m-40 {font-size: 5.33vw !important; /* 40px */ }
   .f-m-42 {font-size: 5.6vw !important; /* 42px */ }
+  .f-m-43 {font-size: 5.73vw !important; /* 43px */ }
   .f-m-45 {font-size: 6vw !important; /* 45px */ }
   .f-m-47 {font-size: 6.26vw !important; /* 47px */ }
   .f-d-48 {font-size: 6.4vw !important; /* 48px */ }
