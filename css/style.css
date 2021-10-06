@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/ztd4uuz.css");
+
 /* #Global
 ================================================== */
 body {
@@ -7,7 +9,7 @@ body {
 /* #Text Utils
 ================================================== */
 .f-ah {
-  font-family: adobe-hebrew, sans-serif!important;
+  font-family:"adobe-hebrew";
 }
 
 .text-red {
@@ -361,7 +363,7 @@ body {
 
 .banner .icon {
   position: absolute;
-  left: 46.5%;
+  left: 50%;
   bottom: 3vw;
   transform: translateX(-50%);
   animation: bounce 3s infinite;
@@ -373,23 +375,8 @@ body {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  60% {
-    -moz-transform: translateY(-15px);
-    -ms-transform: translateY(-15px);
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
+  50% {
+    transform: translateY(-14px) translateX(-50%);
   }
 }
 
@@ -400,7 +387,7 @@ body {
   }
 
   .banner .icon {
-    bottom: 7vw;
+    bottom: 20vw;
   }
 
   .banner .icon img {
@@ -423,9 +410,9 @@ body {
 /* Text */
 .info-section-1 .text {
   position: absolute;
-  top: 50%;
+  top: 20%;
   right: 20%;
-  transform: translate(50%, -50%);
+  transform: translateX(50%);
   width: 26%;
 }
 
@@ -568,7 +555,7 @@ body {
 }
 
 .info-section-1 .accordion .pdf-link img {
-  width: 5.7vw;
+  width: 4vw;
 }
 
 @media (max-width: 1023.98px) {
@@ -578,7 +565,7 @@ body {
 
   /* Img */
   .info-section-1 .img {
-    margin-bottom: 4vw;
+    margin-bottom: 8vw;
   }
 
   /* Text */
@@ -617,8 +604,12 @@ body {
     right: auto;
     transform: none;
     width: 80%;
-    height: 89vw;
+    height: 102vw;
     margin: 16vw auto 0 auto;
+  }
+
+  .info-section-1 .imgs p {
+    margin-bottom: 7vw;
   }
 
   /* Accordion */
@@ -1312,8 +1303,7 @@ body {
     background-color: rgba(0,0,0,.73);
     opacity: 0;
     visibility: hidden;
-    transform: translateX(100%);
-    transition: all .4s ease;
+    transition: opacity .4s ease, visibility .4s ease;
     z-index: 20000;
 
     display: flex;
@@ -1325,7 +1315,6 @@ body {
   .contact-bar.show .desktop {
     opacity: 1;
     visibility: visible;
-    transform: translateX(0);
   }
 
   .contact-bar .box {

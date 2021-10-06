@@ -12,6 +12,37 @@ if (hamburgerBtn) {
   });
 }
 
+/* #Menu Scroll On Click
+  ======================================================= */
+// Handling link clicks
+const menuLinks = document.querySelectorAll('.header-links a');
+
+menuLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const id = link.hash;
+    let yOffset = 0;
+
+    if (window.innerWidth > 1024) {
+      yOffset = -70;
+    } else {
+      yOffset = -80;
+    }
+    
+    const element = document.querySelector(id);
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({top: y, behavior: 'smooth'});
+
+    if (window.innerWidth < 1024) {
+      hamburgerBtn.classList.remove('is-active');
+      header.classList.remove('show-menu');
+      body.classList.remove('no-scroll');
+    }
+  });
+});
+
 /* #Banner
 ================================================== */
 if (document.querySelector('.banner')) {
@@ -20,9 +51,10 @@ if (document.querySelector('.banner')) {
     loop: true,
     speed: 1000,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
       disableOnInteraction: false,
     },
+    effect: 'fade'
   });
 }
 
@@ -38,6 +70,13 @@ if (document.querySelector('.gallery')) {
     pagination: {
       el: ".gallery .swiper-pagination",
     },
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade'
   });
 }
 
@@ -70,11 +109,13 @@ const contactPopupClose = document.querySelector('.contact-bar .close-btn');
 
 if (contactBar) {
   contactPopupToggler.addEventListener('click', (e) => {
+    e.preventDefault();
     contactBar.classList.add('show');
     body.classList.add('no-scroll');
   });
-
+  
   contactPopupClose.addEventListener('click', (e) => {
+    e.preventDefault();
     contactBar.classList.remove('show');
     body.classList.remove('no-scroll');
   });
