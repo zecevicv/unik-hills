@@ -39,15 +39,17 @@ body {
   color: #B61E25;
 }
 
-.btn.btn-primary:hover {
-  color: white;
-  background-color: transparent;
-  border: 1px solid white;
-}
-
 .btn.btn-secondary {
   background-color: #B61E25;
   color: white;
+}
+
+@media (min-width: 1024px) {
+  .btn.btn-primary:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+  }
 }
 
 @media (max-width: 1023.98px) {
